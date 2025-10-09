@@ -1,161 +1,121 @@
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Jose Electrofix — Home</title>
-  <meta name="description" content="Jose Electrofix — Phone repairs, CCTV & electrical services in Nyahururu">
+  <title>Jose Electrofix — Expert Phone Repairs, CCTV & Electrical Services</title>
+  <meta name="description" content="Jose Electrofix provides trusted phone repairs, CCTV installation, and electrical solutions in Nyahururu, Kenya. Founded by Jose Mbugua Kibe.">
   <style>
-    :root{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.45;color:#222}
-    body{margin:0;background:#f5f8ff;color:#111}
-    .wrap{max-width:980px;margin:28px auto;padding:20px}
-    header{background:#003366;color:#fff;padding:18px;border-radius:10px;text-align:center}
-    nav{margin-top:12px;text-align:center}
-    nav a{margin:0 8px;color:#003366;text-decoration:none;font-weight:600}
-    section{background:#fff;border-radius:10px;padding:18px;margin-top:16px;box-shadow:0 6px 20px rgba(2,6,23,.06)}
-    footer{margin-top:20px;text-align:center;color:#6b7280;font-size:14px}
-    form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    input,textarea,button{padding:10px;border-radius:8px;border:1px solid #d1d5db;font-size:14px}
-    textarea{grid-column:1/ -1;min-height:120px;resize:vertical}
-    .full{grid-column:1/ -1;display:flex;justify-content:space-between;align-items:center;gap:12px}
-    .btn{background:#0055aa;color:#fff;border:none;padding:10px 14px;border-radius:8px;cursor:pointer}
-    .note{font-size:13px;color:#6b7280}
-    @media (max-width:640px){form{grid-template-columns:1fr}}
+    :root { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; color: #222; line-height: 1.5; }
+    body { margin: 0; background: #f5f8ff; }
+    header { text-align: center; background: #003366; color: white; padding: 30px 20px; }
+    nav { background: #0055aa; text-align: center; padding: 10px; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .hero { position: relative; }
+    .hero img { width: 100%; height: auto; display: block; }
+    .hero-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; background: rgba(0,0,0,0.5); padding: 20px 40px; border-radius: 12px; text-align: center; }
+    section { background: white; margin: 20px auto; max-width: 960px; border-radius: 12px; box-shadow: 0 3px 8px rgba(0,0,0,0.1); padding: 30px; }
+    h2 { color: #003366; border-bottom: 2px solid #e0e7ff; padding-bottom: 6px; }
+    p, li { color: #333; }
+    ul { padding-left: 18px; }
+    .btn { background: #0055aa; color: white; padding: 10px 16px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px; }
+    form { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    input, textarea, button { padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-size: 14px; }
+    textarea { grid-column: 1 / -1; resize: vertical; min-height: 100px; }
+    .full { grid-column: 1 / -1; text-align: right; }
+    button { background: #0055aa; color: white; border: none; font-weight: bold; cursor: pointer; }
+    button:hover { background: #003366; }
+    footer { text-align: center; background: #003366; color: white; padding: 15px; margin-top: 40px; }
+    @media (max-width: 640px) { form { grid-template-columns: 1fr; } .hero-text { width: 90%; font-size: 14px; } }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <h1>Jose Electrofix</h1>
-      <p>Phone repairs • CCTV • Electrical services — Nyahururu</p>
-    </header>
 
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header>
+    <h1>Jose Electrofix</h1>
+    <p>Expert in Phone Repairs, CCTV, and Electrical Services</p>
+  </header>
 
-    <section id="home">
-  <h2>Welcome to Jose Electrofix</h2>
-  <p>At Jose Electrofix, we provide expert phone repairs, CCTV installations, and electrical solutions in Nyahururu. Our team is dedicated to reliable service, quality workmanship, and affordable prices.</p>
-  <p>Visit us today or contact us for quick and professional assistance!</p>
-</section>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-
-    <section id="services">
-      <h2>Services</h2>
-      <ul>
-        <li>Mobile phone repairs & software updates</li>
-        <li>Supply of spare parts</li>
-        <li>CCTV installation & maintenance</li>
-        <li>Electric fence design & installation</li>
-        <li>Electrical wiring & troubleshooting</li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p><strong>Location:</strong> Nyahururu Town, Kenya</p>
-      <p><strong>Phone:</strong> <a href="tel:+254717173963">+254 717 173 963</a></p>
-      <p><strong>Email:</strong> <a href="mailto:josephmbugua1150@gmail.com">josephmbugua1150@gmail.com</a></p>
-      <p><strong>Business Hours:</strong> Mon–Sat, 8am–6pm</p>
-
-      <!-- Contact form: change action to your Formspree URL if needed -->
-      <!-- Currently set to the Formspree endpoint you provided -->
-      <form id="contactForm" action="https://formspree.io/f/mzzjjpoe" method="POST" novalidate>
-        <div>
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" placeholder="Your full name" required>
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="you@example.com" required>
-        </div>
-        <div>
-          <label for="phone">Phone</label>
-          <input id="phone" name="phone" type="tel" placeholder="+254 7XX XXX XXX">
-        </div>
-        <div>
-          <label for="subject">Subject</label>
-          <input id="subject" name="subject" type="text" placeholder="Repair inquiry">
-        </div>
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Describe the issue..." required></textarea>
-
-        <div class="full">
-          <p class="note">By submitting you agree to be contacted about your enquiry.</p>
-          <div style="display:flex;gap:8px">
-            <button type="reset" class="btn" style="background:#f1f5f9;color:#111;border:1px solid #d1d5db">Reset</button>
-            <button type="submit" class="btn">Send Message</button>
-          </div>
-        </div>
-      </form>
-
-      <div id="formFeedback" class="note" style="margin-top:12px;display:none"></div>
-
-      <!--
-        JS area where you "write the program":
-        - This script intercepts the form submit, posts to Formspree, shows success, and redirects to thank-you.html
-        - You can replace this block with your own logic (AJAX calls, validations, analytics, etc).
-      -->
-      <script>
-        (function(){
-          const form = document.getElementById('contactForm');
-          const feedback = document.getElementById('formFeedback');
-
-          // Helper: show message to user
-          function showMessage(msg, success=true){
-            feedback.textContent = msg;
-            feedback.style.display = 'block';
-            feedback.style.color = success ? '#064e3b' : '#7f1d1d';
-            feedback.style.background = success ? '#e6ffef' : '#fff1f0';
-            feedback.style.padding = '10px';
-            feedback.style.borderRadius = '8px';
-          }
-
-          // This is the "program" you can edit — submit handler
-          form.addEventListener('submit', async function(e){
-            e.preventDefault();
-
-            // Basic front-end validation (feel free to expand)
-            if(!form.name.value.trim() || !form.email.value.trim() || !form.message.value.trim()){
-              showMessage('Please fill in all required fields.', false);
-              return;
-            }
-
-            // You can replace the fetch call below with any program logic you like
-            // e.g., call your own API, run client-side processing, or integrate analytics
-            try{
-              const data = new FormData(form);
-              const res = await fetch(form.action, {
-                method: 'POST',
-                body: data,
-                headers: { 'Accept': 'application/json' }
-              });
-              if(res.ok){
-                // Show success and redirect to thank-you page
-                showMessage('Thank you — message sent. Redirecting...', true);
-                form.reset();
-                // Wait 1.2s then redirect to thank-you page
-                setTimeout(()=>{ window.location.href = 'thank-you.html'; }, 1200);
-              } else {
-                const json = await res.json().catch(()=>({}));
-                showMessage(json.error || 'Error sending message. Please try again later.', false);
-              }
-            }catch(err){
-              console.error(err);
-              showMessage('Network error. Please try again later.', false);
-            }
-          });
-        })();
-      </script>
-    </section>
-
-    <footer>
-      <p>&copy; 2025 Jose Electrofix — All rights reserved.</p>
-    </footer>
+  <div class="hero" id="home">
+    <img src="A_website_homepage_for_Jose_Electrofix_is_displaye.png" alt="People working in an office with computers">
+    <div class="hero-text">
+      <h2>Welcome to Jose Electrofix</h2>
+      <p>Your trusted partner in electronics, security, and electrical solutions.</p>
+    </div>
   </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>My name is <strong>Jose Mbugua Kibe</strong>, founder of <strong>Jose Electrofix</strong>, a trusted electronics and electrical repair company based in Nyahururu, Kenya. With years of experience in mobile phone repair, CCTV installation, and electrical system design, I take pride in delivering precise, reliable, and affordable technical services to individuals, homes, and institutions.</p>
+    <p>My journey began with a deep fascination for how technology connects and empowers people. Over time, this passion evolved into a professional commitment to excellence — helping clients restore devices, install secure systems, and maintain safe electrical networks. Every project I undertake reflects my belief that integrity, innovation, and attention to detail build lasting trust.</p>
+    <h3>Vision</h3>
+    <p>To become the most reliable and innovative electronics repair and security systems provider in Kenya, setting new standards for technical excellence and customer satisfaction.</p>
+    <h3>Mission</h3>
+    <p>To deliver high-quality, sustainable, and affordable electrical and electronic solutions with professionalism, transparency, and technical precision.</p>
+    <a class="btn" href="Jose-Electrofix-Profile.pdf" download>📄 Download Business Profile</a>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>🔧 <strong>Phone Repairs & Software Updates</strong> — Fast, reliable repairs for all mobile brands, including screen replacements, charging issues, and system updates.</li>
+      <li>📱 <strong>Phone Spare Parts Supply</strong> — Genuine and high-quality parts for Android and iPhone devices, sourced from trusted suppliers.</li>
+      <li>🎥 <strong>CCTV Installation & Maintenance</strong> — Secure your home or business with modern, high-resolution CCTV systems professionally installed.</li>
+      <li>⚡ <strong>Electric Fence Installation</strong> — Custom-designed electric fence systems to enhance property safety and peace of mind.</li>
+      <li>💡 <strong>Electrical Wiring & Troubleshooting</strong> — From new installations to fault diagnosis, we ensure safety and compliance in every project.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 <strong>Location:</strong> Nyahururu Town, Kenya</p>
+    <p>📞 <strong>Phone:</strong> <a href="tel:+254717173963">+254 717 173 963</a></p>
+    <p>💬 <strong>WhatsApp:</strong> <a href="https://wa.me/254717173963">Chat on WhatsApp</a></p>
+    <p>✉️ <strong>Email:</strong> <a href="mailto:josephmbugua1150@gmail.com">josephmbugua1150@gmail.com</a></p>
+    <p>🕓 <strong>Business Hours:</strong> Mon–Sat, 8am–6pm</p>
+
+    <form id="contactForm" action="https://formspree.io/f/mzzjjpoe" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Your Phone Number">
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <div class="full">
+        <button type="submit">Send Message</button>
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Jose Electrofix — All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (response.ok) {
+        alert('✅ Message sent successfully!');
+        form.reset();
+        window.location.href = 'thank-you.html';
+      } else {
+        alert('❌ There was a problem sending your message. Please try again.');
+      }
+    });
+  </script>
+
 </body>
 </html>

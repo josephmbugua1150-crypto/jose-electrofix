@@ -1,1 +1,160 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jose Electrofix — Home</title>
+  <meta name="description" content="Jose Electrofix — Phone repairs, CCTV & electrical services in Nyahururu">
+  <style>
+    :root{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.45;color:#222}
+    body{margin:0;background:#f5f8ff;color:#111}
+    .wrap{max-width:980px;margin:28px auto;padding:20px}
+    header{background:#003366;color:#fff;padding:18px;border-radius:10px;text-align:center}
+    nav{margin-top:12px;text-align:center}
+    nav a{margin:0 8px;color:#003366;text-decoration:none;font-weight:600}
+    section{background:#fff;border-radius:10px;padding:18px;margin-top:16px;box-shadow:0 6px 20px rgba(2,6,23,.06)}
+    footer{margin-top:20px;text-align:center;color:#6b7280;font-size:14px}
+    form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    input,textarea,button{padding:10px;border-radius:8px;border:1px solid #d1d5db;font-size:14px}
+    textarea{grid-column:1/ -1;min-height:120px;resize:vertical}
+    .full{grid-column:1/ -1;display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .btn{background:#0055aa;color:#fff;border:none;padding:10px 14px;border-radius:8px;cursor:pointer}
+    .note{font-size:13px;color:#6b7280}
+    @media (max-width:640px){form{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Jose Electrofix</h1>
+      <p>Phone repairs • CCTV • Electrical services — Nyahururu</p>
+    </header>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+      <h2>Welcome</h2>
+      <p>Use this file as your editable website entry point. Below you will find a contact form wired to Formspree and clear comments where you can insert or "write the program" — i.e., add your own scripts, server calls, or other logic.</p>
+      <p class="note"><strong>Edit tips:</strong> Open this file in a text editor to update text, replace images, or add sections. Save as <code>index.html</code> and push to GitHub to publish with GitHub Pages.</p>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <ul>
+        <li>Mobile phone repairs & software updates</li>
+        <li>Supply of spare parts</li>
+        <li>CCTV installation & maintenance</li>
+        <li>Electric fence design & installation</li>
+        <li>Electrical wiring & troubleshooting</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p><strong>Location:</strong> Nyahururu Town, Kenya</p>
+      <p><strong>Phone:</strong> <a href="tel:+254717173963">+254 717 173 963</a></p>
+      <p><strong>Email:</strong> <a href="mailto:josephmbugua1150@gmail.com">josephmbugua1150@gmail.com</a></p>
+      <p><strong>Business Hours:</strong> Mon–Sat, 8am–6pm</p>
+
+      <!-- Contact form: change action to your Formspree URL if needed -->
+      <!-- Currently set to the Formspree endpoint you provided -->
+      <form id="contactForm" action="https://formspree.io/f/mzzjjpoe" method="POST" novalidate>
+        <div>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your full name" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" placeholder="+254 7XX XXX XXX">
+        </div>
+        <div>
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" placeholder="Repair inquiry">
+        </div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Describe the issue..." required></textarea>
+
+        <div class="full">
+          <p class="note">By submitting you agree to be contacted about your enquiry.</p>
+          <div style="display:flex;gap:8px">
+            <button type="reset" class="btn" style="background:#f1f5f9;color:#111;border:1px solid #d1d5db">Reset</button>
+            <button type="submit" class="btn">Send Message</button>
+          </div>
+        </div>
+      </form>
+
+      <div id="formFeedback" class="note" style="margin-top:12px;display:none"></div>
+
+      <!--
+        JS area where you "write the program":
+        - This script intercepts the form submit, posts to Formspree, shows success, and redirects to thank-you.html
+        - You can replace this block with your own logic (AJAX calls, validations, analytics, etc).
+      -->
+      <script>
+        (function(){
+          const form = document.getElementById('contactForm');
+          const feedback = document.getElementById('formFeedback');
+
+          // Helper: show message to user
+          function showMessage(msg, success=true){
+            feedback.textContent = msg;
+            feedback.style.display = 'block';
+            feedback.style.color = success ? '#064e3b' : '#7f1d1d';
+            feedback.style.background = success ? '#e6ffef' : '#fff1f0';
+            feedback.style.padding = '10px';
+            feedback.style.borderRadius = '8px';
+          }
+
+          // This is the "program" you can edit — submit handler
+          form.addEventListener('submit', async function(e){
+            e.preventDefault();
+
+            // Basic front-end validation (feel free to expand)
+            if(!form.name.value.trim() || !form.email.value.trim() || !form.message.value.trim()){
+              showMessage('Please fill in all required fields.', false);
+              return;
+            }
+
+            // You can replace the fetch call below with any program logic you like
+            // e.g., call your own API, run client-side processing, or integrate analytics
+            try{
+              const data = new FormData(form);
+              const res = await fetch(form.action, {
+                method: 'POST',
+                body: data,
+                headers: { 'Accept': 'application/json' }
+              });
+              if(res.ok){
+                // Show success and redirect to thank-you page
+                showMessage('Thank you — message sent. Redirecting...', true);
+                form.reset();
+                // Wait 1.2s then redirect to thank-you page
+                setTimeout(()=>{ window.location.href = 'thank-you.html'; }, 1200);
+              } else {
+                const json = await res.json().catch(()=>({}));
+                showMessage(json.error || 'Error sending message. Please try again later.', false);
+              }
+            }catch(err){
+              console.error(err);
+              showMessage('Network error. Please try again later.', false);
+            }
+          });
+        })();
+      </script>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Jose Electrofix — All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

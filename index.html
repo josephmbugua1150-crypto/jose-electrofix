@@ -13,200 +13,73 @@
   <meta name="author" content="Jose Mbugua">
   <meta name="robots" content="index, follow">
 
-  <!-- Open Graph for Social Media -->
-  <meta property="og:title" content="Jose Electrofix Nyahururu | Mobile Repairs & Security Systems">
-  <meta property="og:description" content="Trusted experts in phone repair, CCTV installation, and electric fence systems in Nyahururu.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://josephmbugua1150-crypto.github.io/my-website/">
-  <meta property="og:image" content="https://josephmbugua1150-crypto.github.io/my-website/logo.png">
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
   <style>
     /* === Global Styles === */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Arial', sans-serif;
-      line-height: 1.6;
-      scroll-behavior: smooth;
-      color: #111;
-    }
-
-    h1, h2, h3 {
-      margin-bottom: 20px;
-    }
-
-    section {
-      padding: 80px 20px;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 25px;
-      background-color: #111;
-      color: #fff;
-      border-radius: 5px;
-      transition: 0.3s;
-      font-weight: bold;
-    }
-
-    .btn:hover {
-      background-color: #444;
-    }
+    *{ box-sizing:border-box; margin:0; padding:0; }
+    body{ font-family: 'Arial', sans-serif; line-height:1.6; scroll-behavior:smooth; color:#111; }
+    h1,h2,h3{ margin-bottom:20px; }
+    section{ padding:80px 20px; }
+    a{ text-decoration:none; color:inherit; }
+    .btn{ display:inline-block; padding:12px 25px; border-radius:5px; font-weight:bold; transition:0.3s; cursor:pointer; }
 
     /* === Navbar === */
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #111;
-      padding: 15px 0;
-      z-index: 1000;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-      transition: background-color 0.3s;
+    nav{
+      position:fixed; top:0; left:0; width:100%; background-color:#ff6600; padding:15px 0; z-index:1000;
+      box-shadow:0 2px 5px rgba(0,0,0,0.3); transition:background-color 0.3s;
     }
-
-    nav.scrolled {
-      background-color: #222;
-    }
-
-    nav .menu {
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-    }
-
-    nav a {
-      color: white;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #ff9900;
-    }
-
-    .hamburger {
-      display: none;
-      position: absolute;
-      left: 20px;
-      top: 15px;
-      font-size: 28px;
-      color: white;
-      cursor: pointer;
-    }
-
-    @media (max-width: 768px) {
-      .hamburger {
-        display: block;
-      }
-
-      nav .menu {
-        display: none;
-        flex-direction: column;
-        background-color: #111;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        padding: 15px 0;
-      }
-
-      nav .menu.active {
-        display: flex;
-      }
+    nav.scrolled{ background-color:#ff9933; }
+    nav .menu{ display:flex; justify-content:center; gap:25px; }
+    nav a{ color:white; font-weight:bold; transition:color 0.3s; }
+    nav a:hover{ color:#fff200; }
+    .hamburger{ display:none; position:absolute; left:20px; top:15px; font-size:28px; color:white; cursor:pointer; }
+    @media(max-width:768px){
+      .hamburger{ display:block; }
+      nav .menu{ display:none; flex-direction:column; background-color:#ff6600; position:absolute; top:60px; left:0; width:100%; text-align:center; padding:15px 0; }
+      nav .menu.active{ display:flex; }
     }
 
     /* === Hero Section === */
-    #home {
-      background: linear-gradient(135deg, #111, #444);
-      color: #fff;
-      text-align: center;
-      padding: 150px 20px 100px 20px;
+    #home{
+      background: linear-gradient(to right, #ff7e5f, #feb47b);
+      color:white; text-align:center; padding:150px 20px 100px 20px;
     }
-
-    #home h1 {
-      font-size: 2.8em;
-      margin-bottom: 15px;
-    }
-
-    #home p {
-      font-size: 1.2em;
-      margin-bottom: 20px;
-    }
+    #home h1{ font-size:3em; margin-bottom:15px; }
+    #home p{ font-size:1.2em; margin-bottom:25px; }
+    #home .btn{ background-color:#fff; color:#ff6600; }
+    #home .btn:hover{ background-color:#ff6600; color:#fff; transform:translateY(-3px); }
 
     /* === Services Section === */
-    .services-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-      max-width: 1000px;
-      margin: 0 auto;
+    .services-container{
+      display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:25px; max-width:1000px; margin:0 auto;
     }
-
-    .service {
-      background-color: #f1f1f1;
-      padding: 25px 20px;
-      border-radius: 12px;
-      text-align: center;
-      transition: transform 0.3s, box-shadow 0.3s;
+    .service{
+      padding:25px 20px; border-radius:12px; text-align:center; color:white; transition:transform 0.3s, box-shadow 0.3s;
     }
-
-    .service:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    }
+    .service:hover{ transform:translateY(-5px); box-shadow:0 10px 20px rgba(0,0,0,0.2); }
+    .service1{ background: linear-gradient(135deg, #ff6a00, #ffb347); }
+    .service2{ background: linear-gradient(135deg, #00c6ff, #0072ff); }
+    .service3{ background: linear-gradient(135deg, #7f00ff, #e100ff); }
+    .service4{ background: linear-gradient(135deg, #00ff88, #00c3ff); }
 
     /* === About Section === */
-    #about p {
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: center;
-      font-size: 1.1em;
-    }
+    #about p{ max-width:800px; margin:0 auto; text-align:center; font-size:1.1em; }
 
     /* === Contact Section === */
-    #contact {
-      background-color: #f9f9f9;
-      text-align: center;
+    #contact{ background-color:#ffe5b4; text-align:center; }
+    #contact form{ max-width:400px; margin:0 auto; }
+    #contact input, #contact textarea{
+      width:100%; padding:10px; margin-top:8px; border-radius:5px; border:1px solid #ccc; font-size:1em;
     }
-
-    #contact form {
-      max-width: 400px;
-      margin: 0 auto;
+    #contact button{
+      margin-top:15px; width:100%; background-color:#ff6600; color:white; border:none; cursor:pointer; transition:0.3s;
     }
-
-    #contact input, #contact textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 8px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      font-size: 1em;
-    }
-
-    #contact button {
-      margin-top: 15px;
-      width: 100%;
-    }
+    #contact button:hover{ background-color:#ff9933; }
 
     /* === Footer === */
-    footer {
-      text-align: center;
-      background-color: #111;
-      color: #fff;
-      padding: 15px 0;
-    }
+    footer{ text-align:center; background-color:#ff6600; color:white; padding:15px 0; }
   </style>
 </head>
 
@@ -224,16 +97,8 @@
   </nav>
 
   <script>
-    // Hamburger Menu
-    function toggleMenu() {
-      document.getElementById("menu").classList.toggle("active");
-    }
-
-    // Navbar Scroll Effect
-    window.addEventListener("scroll", () => {
-      const nav = document.getElementById("navbar");
-      nav.classList.toggle("scrolled", window.scrollY > 50);
-    });
+    function toggleMenu(){ document.getElementById("menu").classList.toggle("active"); }
+    window.addEventListener("scroll",()=>{ document.getElementById("navbar").classList.toggle("scrolled", window.scrollY>50); });
   </script>
 
   <!-- Hero Section -->
@@ -245,22 +110,22 @@
 
   <!-- Services Section -->
   <section id="services">
-    <h2>Our Services</h2>
+    <h2 style="text-align:center; margin-bottom:40px;">Our Services</h2>
     <div class="services-container">
-      <div class="service">
-        <h3>📱 Mobile Phone Repairs</h3>
+      <div class="service service1">
+        <h3><i class="fas fa-mobile-alt"></i> Mobile Phone Repairs</h3>
         <p>Expert diagnosis and repair for all phone models using high-quality parts.</p>
       </div>
-      <div class="service">
-        <h3>🎥 CCTV Installation</h3>
+      <div class="service service2">
+        <h3><i class="fas fa-video"></i> CCTV Installation</h3>
         <p>Secure your home or business with reliable CCTV setup and maintenance.</p>
       </div>
-      <div class="service">
-        <h3>⚡ Electric Fences & Alarms</h3>
+      <div class="service service3">
+        <h3><i class="fas fa-bolt"></i> Electric Fences & Alarms</h3>
         <p>Full installation and maintenance of electric fences and alarm systems.</p>
       </div>
-      <div class="service">
-        <h3>💡 Electrical Solutions</h3>
+      <div class="service service4">
+        <h3><i class="fas fa-lightbulb"></i> Electrical Solutions</h3>
         <p>Reliable wiring, maintenance, and energy-efficient lighting systems.</p>
       </div>
     </div>
@@ -268,7 +133,7 @@
 
   <!-- About Section -->
   <section id="about">
-    <h2>About Jose Electrofix</h2>
+    <h2 style="text-align:center; margin-bottom:40px;">About Jose Electrofix</h2>
     <p>
       <strong>Jose Electrofix</strong> is a professional electronics and security systems business based in <strong>Nyahururu, Kenya</strong>.
       We specialize in <strong>mobile phone repairs, spare parts, CCTV, alarm, and electric fence installations</strong>.
@@ -278,7 +143,7 @@
 
   <!-- Contact Section -->
   <section id="contact">
-    <h2>Contact Us</h2>
+    <h2 style="margin-bottom:30px;">Contact Us</h2>
     <p><strong>Location:</strong> Nyahururu Town, Kenya</p>
     <p><strong>Phone:</strong> +254 717173963</p>
     <p><strong>Email:</strong> joseelectrofix@gmail.com</p>
@@ -293,7 +158,7 @@
       <label for="message">Message:</label><br>
       <textarea id="message" name="message" rows="5" required placeholder="Write your message here"></textarea><br><br>
 
-      <button type="submit" class="btn">Send Message</button>
+      <button type="submit">Send Message</button>
     </form>
   </section>
 

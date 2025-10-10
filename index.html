@@ -3,159 +3,204 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jose Electrofix | Electronics & Security Systems</title>
+
+  <title>Jose Electrofix Nyahururu | Mobile Repairs & Security Systems</title>
+
+  <!-- ✅ SEO Meta Tags -->
+  <meta name="title" content="Jose Electrofix Nyahururu | Mobile Repairs & Security Systems">
+  <meta name="description" content="Jose Electrofix is a Nyahururu-based business offering expert mobile phone repairs, CCTV installation, and electric fence setup for homes and businesses.">
+  <meta name="keywords" content="Jose Electrofix, Nyahururu, mobile repair, phone repair, CCTV installation, electric fence, Jose Electrofix Ltd, electronics repair Nyahururu, security systems Kenya">
+  <meta name="author" content="Jose Mbugua">
+  <meta name="robots" content="index, follow">
+
+  <!-- ✅ Social Preview -->
+  <meta property="og:title" content="Jose Electrofix Nyahururu | Mobile Repairs & Security Systems">
+  <meta property="og:description" content="Trusted experts in phone repair, CCTV installation, and electric fence systems in Nyahururu.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://josephmbugua1150-crypto.github.io/my-website/">
+  <meta property="og:image" content="https://josephmbugua1150-crypto.github.io/my-website/logo.png">
+
   <link rel="stylesheet" href="style.css">
-</head>
-<body><!-- Responsive Navigation Bar -->
-<style>
-  /* Navbar styling */
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #111;
-    padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    z-index: 1000;
-  }
-
-  nav .menu {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  /* Hamburger icon */
-  .hamburger {
-    display: none;
-    position: absolute;
-    left: 20px;
-    top: 12px;
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-  }
-
-  /* Mobile view */
-  @media (max-width: 768px) {
-    nav .menu {
-      display: none;
-      flex-direction: column;
-      background-color: #111;
-      position: absolute;
-      top: 50px;
-      left: 0;
-      width: 100%;
-      text-align: center;
-      padding: 10px 0;
+  <style>
+    /* === Basic Styling === */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      scroll-behavior: smooth;
     }
 
-    nav .menu.active {
+    h1, h2 {
+      text-align: center;
+      color: #111;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    /* === Navbar === */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #111;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    nav .menu {
       display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     .hamburger {
-      display: block;
+      display: none;
+      position: absolute;
+      left: 20px;
+      top: 12px;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
     }
-  }
-</style>
 
-<nav>
-  <div class="hamburger" onclick="toggleMenu()">☰</div>
-  <div class="menu" id="menu">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
-<section id="home" style="padding-top: 80px;">
-  <h1>Welcome to Jose Electrofix</h1>
-  <p>Your trusted mobile repair and security system experts.</p>
-</section>
+    @media (max-width: 768px) {
+      nav .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #111;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+      }
 
-<script>
-  function toggleMenu() {
-    document.getElementById("menu").classList.toggle("active");
-  }
-</script>
+      nav .menu.active {
+        display: flex;
+      }
 
+      .hamburger {
+        display: block;
+      }
+    }
 
-  <header>
-    <h1>Jose Electrofix</h1>
-    <p>Reliable • Affordable • Professional</p>
-    <nav>
-      <a href="#services">Services</a>
+    /* === Buttons === */
+    .btn {
+      display: inline-block;
+      background-color: #111;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background-color: #444;
+    }
+
+    /* === Footer === */
+    footer {
+      text-align: center;
+      background: #111;
+      color: white;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- === Navigation === -->
+  <nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="menu" id="menu">
+      <a href="#home">Home</a>
       <a href="#about">About</a>
+      <a href="#services">Services</a>
       <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
-  <section id="hero">
-    <h2>Your Trusted Partner in Electronics and Security</h2>
-    <p>We specialize in mobile phone repairs, spare parts, and installation of CCTV, alarms, and electric fences.</p>
-    <a href="#contact" class="btn">Get in Touch</a>
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("active");
+    }
+  </script>
+
+  <!-- === Hero Section === -->
+  <section id="home" style="padding-top: 80px;">
+    <h1>Welcome to Jose Electrofix Nyahururu</h1>
+    <p style="text-align:center;">Your trusted experts in mobile phone repairs, CCTV installations, and electric fence systems.</p>
+    <div style="text-align:center;">
+      <a href="#contact" class="btn">Contact Us</a>
+    </div>
   </section>
 
+  <!-- === Services Section === -->
   <section id="services">
     <h2>Our Services</h2>
     <div class="services-container">
       <div class="service">
         <h3>📱 Mobile Phone Repairs</h3>
-        <p>Expert diagnosis and repair for all phone models, using quality spare parts.</p>
+        <p>Expert diagnosis and repair for all phone models using high-quality parts.</p>
       </div>
       <div class="service">
         <h3>🎥 CCTV Installation</h3>
-        <p>Secure your home or business with professional CCTV setup and configuration.</p>
+        <p>Secure your home or business with reliable CCTV setup and maintenance.</p>
       </div>
       <div class="service">
         <h3>⚡ Electric Fences & Alarms</h3>
-        <p>Full installation and maintenance of electric fences and alarm systems for safety.</p>
+        <p>Full installation and maintenance of electric fences and alarm systems.</p>
       </div>
       <div class="service">
         <h3>💡 Electrical Solutions</h3>
-        <p>Reliable wiring, maintenance, and smart energy-efficient lighting systems.</p>
+        <p>Reliable wiring, maintenance, and energy-efficient lighting systems.</p>
       </div>
     </div>
   </section>
 
+  <!-- === About Section === -->
   <section id="about">
-    <h2>About Us</h2>
+    <h2>About Jose Electrofix</h2>
     <p>
-      <strong>Jose Electrofix</strong> is a registered business based in Nyahururu, Kenya.
-      We provide top-quality electronic and security services to homes, offices, and institutions.
-      Our mission is to deliver affordable and dependable technology solutions with excellence and integrity.
+      <strong>Jose Electrofix</strong> is a professional electronics and security systems business based in <strong>Nyahururu, Kenya</strong>.
+      We specialize in <strong>mobile phone repairs, spare parts, CCTV, alarm, and electric fence installations</strong>.
+      Our mission is to provide affordable, reliable, and professional service to homes, offices, and institutions.
     </p>
   </section>
 
-  <section id="contact">
+  <!-- === Contact Section === -->
+  <section id="contact" style="background-color: #f9f9f9;">
     <h2>Contact Us</h2>
-    <p><strong>Location:</strong> Nyahururu Town</p>
+    <p><strong>Location:</strong> Nyahururu Town, Kenya</p>
     <p><strong>Phone:</strong> +254 717173963</p>
-    <p><strong>Email:</strong> josephmbugua1150@gmail.com</p>
+    <p><strong>Email:</strong> joseelectrofix@gmail.com</p>
+
+    <!-- ✅ Formspree Contact Form -->
+    <form action="https://formspree.io/f/mzzjjpoe" method="POST" style="max-width:400px;margin:auto;">
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Your Email:</label><br>
+      <input type="email" id="email" name="_replyto" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
   </section>
-
-
-  <form action="https://formspree.io/f/mzzjjpoe" method="POST">
-    <label for="name">Your Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
-
-    <label for="email">Your Email:</label><br>
-    <input type="email" id="email" name="_replyto" required><br><br>
-
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="5" required></textarea><br><br>
-
-    <button type="submit">Send Message</button>
-  </form>
-
 
   <footer>
     <p>© 2025 Jose Electrofix — All Rights Reserved.</p>

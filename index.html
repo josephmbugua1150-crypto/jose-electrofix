@@ -6,37 +6,60 @@
 
   <title>Jose Electrofix Nyahururu | Mobile Repairs & Security Systems</title>
 
-  <!-- ✅ SEO Meta Tags -->
+  <!-- SEO Meta Tags -->
   <meta name="title" content="Jose Electrofix Nyahururu | Mobile Repairs & Security Systems">
   <meta name="description" content="Jose Electrofix is a Nyahururu-based business offering expert mobile phone repairs, CCTV installation, and electric fence setup for homes and businesses.">
-  <meta name="keywords" content="Jose Electrofix, Nyahururu, mobile repair, phone repair, CCTV installation, electric fence, Jose Electrofix Ltd, electronics repair Nyahururu, security systems Kenya">
+  <meta name="keywords" content="Jose Electrofix, Nyahururu, mobile repair, phone repair, CCTV installation, electric fence, electronics repair Nyahururu, security systems Kenya">
   <meta name="author" content="Jose Mbugua">
   <meta name="robots" content="index, follow">
 
-  <!-- ✅ Social Preview -->
+  <!-- Open Graph for Social Media -->
   <meta property="og:title" content="Jose Electrofix Nyahururu | Mobile Repairs & Security Systems">
   <meta property="og:description" content="Trusted experts in phone repair, CCTV installation, and electric fence systems in Nyahururu.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://josephmbugua1150-crypto.github.io/my-website/">
   <meta property="og:image" content="https://josephmbugua1150-crypto.github.io/my-website/logo.png">
 
-  <link rel="stylesheet" href="style.css">
   <style>
-    /* === Basic Styling === */
-    body {
-      font-family: Arial, sans-serif;
+    /* === Global Styles === */
+    * {
+      box-sizing: border-box;
       margin: 0;
-      line-height: 1.6;
-      scroll-behavior: smooth;
+      padding: 0;
     }
 
-    h1, h2 {
-      text-align: center;
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      scroll-behavior: smooth;
       color: #111;
     }
 
+    h1, h2, h3 {
+      margin-bottom: 20px;
+    }
+
     section {
-      padding: 40px 20px;
+      padding: 80px 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #111;
+      color: #fff;
+      border-radius: 5px;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #444;
     }
 
     /* === Navbar === */
@@ -46,84 +69,152 @@
       left: 0;
       width: 100%;
       background-color: #111;
-      padding: 10px 0;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      padding: 15px 0;
       z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      transition: background-color 0.3s;
+    }
+
+    nav.scrolled {
+      background-color: #222;
     }
 
     nav .menu {
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 25px;
     }
 
     nav a {
       color: white;
-      text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff9900;
     }
 
     .hamburger {
       display: none;
       position: absolute;
       left: 20px;
-      top: 12px;
-      font-size: 24px;
+      top: 15px;
+      font-size: 28px;
       color: white;
       cursor: pointer;
     }
 
     @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+
       nav .menu {
         display: none;
         flex-direction: column;
         background-color: #111;
         position: absolute;
-        top: 50px;
+        top: 60px;
         left: 0;
         width: 100%;
         text-align: center;
-        padding: 10px 0;
+        padding: 15px 0;
       }
 
       nav .menu.active {
         display: flex;
       }
-
-      .hamburger {
-        display: block;
-      }
     }
 
-    /* === Buttons === */
-    .btn {
-      display: inline-block;
-      background-color: #111;
+    /* === Hero Section === */
+    #home {
+      background: linear-gradient(135deg, #111, #444);
       color: #fff;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
+      text-align: center;
+      padding: 150px 20px 100px 20px;
     }
 
-    .btn:hover {
-      background-color: #444;
+    #home h1 {
+      font-size: 2.8em;
+      margin-bottom: 15px;
+    }
+
+    #home p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    /* === Services Section === */
+    .services-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .service {
+      background-color: #f1f1f1;
+      padding: 25px 20px;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    /* === About Section === */
+    #about p {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.1em;
+    }
+
+    /* === Contact Section === */
+    #contact {
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    #contact form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    #contact input, #contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    #contact button {
+      margin-top: 15px;
+      width: 100%;
     }
 
     /* === Footer === */
     footer {
       text-align: center;
-      background: #111;
-      color: white;
-      padding: 10px 0;
+      background-color: #111;
+      color: #fff;
+      padding: 15px 0;
     }
   </style>
 </head>
 
 <body>
-  <!-- === Navigation === -->
-  <nav>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">☰</div>
     <div class="menu" id="menu">
       <a href="#home">Home</a>
       <a href="#about">About</a>
@@ -133,21 +224,26 @@
   </nav>
 
   <script>
+    // Hamburger Menu
     function toggleMenu() {
       document.getElementById("menu").classList.toggle("active");
     }
+
+    // Navbar Scroll Effect
+    window.addEventListener("scroll", () => {
+      const nav = document.getElementById("navbar");
+      nav.classList.toggle("scrolled", window.scrollY > 50);
+    });
   </script>
 
-  <!-- === Hero Section === -->
-  <section id="home" style="padding-top: 80px;">
+  <!-- Hero Section -->
+  <section id="home">
     <h1>Welcome to Jose Electrofix Nyahururu</h1>
-    <p style="text-align:center;">Your trusted experts in mobile phone repairs, CCTV installations, and electric fence systems.</p>
-    <div style="text-align:center;">
-      <a href="#contact" class="btn">Contact Us</a>
-    </div>
+    <p>Your trusted experts in mobile phone repairs, CCTV installations, and electric fence systems.</p>
+    <a href="#contact" class="btn">Contact Us</a>
   </section>
 
-  <!-- === Services Section === -->
+  <!-- Services Section -->
   <section id="services">
     <h2>Our Services</h2>
     <div class="services-container">
@@ -170,7 +266,7 @@
     </div>
   </section>
 
-  <!-- === About Section === -->
+  <!-- About Section -->
   <section id="about">
     <h2>About Jose Electrofix</h2>
     <p>
@@ -180,23 +276,22 @@
     </p>
   </section>
 
-  <!-- === Contact Section === -->
-  <section id="contact" style="background-color: #f9f9f9;">
+  <!-- Contact Section -->
+  <section id="contact">
     <h2>Contact Us</h2>
     <p><strong>Location:</strong> Nyahururu Town, Kenya</p>
     <p><strong>Phone:</strong> +254 717173963</p>
     <p><strong>Email:</strong> joseelectrofix@gmail.com</p>
 
-    <!-- ✅ Formspree Contact Form -->
-    <form action="https://formspree.io/f/mzzjjpoe" method="POST" style="max-width:400px;margin:auto;">
+    <form action="https://formspree.io/f/mzzjjpoe" method="POST">
       <label for="name">Your Name:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
+      <input type="text" id="name" name="name" required placeholder="Enter your full name"><br><br>
 
       <label for="email">Your Email:</label><br>
-      <input type="email" id="email" name="_replyto" required><br><br>
+      <input type="email" id="email" name="_replyto" required placeholder="Enter your email"><br><br>
 
       <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+      <textarea id="message" name="message" rows="5" required placeholder="Write your message here"></textarea><br><br>
 
       <button type="submit" class="btn">Send Message</button>
     </form>
@@ -205,5 +300,6 @@
   <footer>
     <p>© 2025 Jose Electrofix — All Rights Reserved.</p>
   </footer>
+
 </body>
 </html>

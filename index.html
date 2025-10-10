@@ -1,214 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Jose Electrofix Nyahururu | Mobile Repairs & Security Systems</title>
 
   <!-- ✅ SEO Meta Tags -->
-  <meta name="title" content="Jose Electrofix Nyahururu | Mobile Repairs & Security Systems" />
-  <meta name="description" content="Jose Electrofix is a Nyahururu-based business offering expert mobile phone repairs, CCTV installation, and electric fence setup for homes and businesses." />
-  <meta name="keywords" content="Jose Electrofix, Nyahururu, mobile repair, phone repair, CCTV installation, electric fence, Jose Electrofix Ltd, electronics repair Nyahururu, security systems Kenya" />
-  <meta name="author" content="Jose Mbugua" />
-  <meta name="robots" content="index, follow" />
+  <meta name="title" content="Jose Electrofix Nyahururu | Mobile Repairs & Security Systems">
+  <meta name="description" content="Jose Electrofix is a Nyahururu-based business offering expert mobile phone repairs, CCTV installation, and electric fence setup for homes and businesses.">
+  <meta name="keywords" content="Jose Electrofix, Nyahururu, mobile repair, phone repair, CCTV installation, electric fence, Jose Electrofix Ltd, electronics repair Nyahururu, security systems Kenya">
+  <meta name="author" content="Jose Mbugua">
+  <meta name="robots" content="index, follow">
 
   <!-- ✅ Social Preview -->
-  <meta property="og:title" content="Jose Electrofix Nyahururu | Mobile Repairs & Security Systems" />
-  <meta property="og:description" content="Trusted experts in phone repair, CCTV installation, and electric fence systems in Nyahururu." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://josephmbugua1150-crypto.github.io/my-website/" />
-  <meta property="og:image" content="https://josephmbugua1150-crypto.github.io/my-website/logo.png" />
+  <meta property="og:title" content="Jose Electrofix Nyahururu | Mobile Repairs & Security Systems">
+  <meta property="og:description" content="Trusted experts in phone repair, CCTV installation, and electric fence systems in Nyahururu.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://josephmbugua1150-crypto.github.io/my-website/">
+  <meta property="og:image" content="https://josephmbugua1150-crypto.github.io/my-website/logo.png">
 
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    /* === Base Styling === */
-    body {
-      font-family: "Poppins", sans-serif;
-      margin: 0;
-      line-height: 1.6;
-      scroll-behavior: smooth;
-      background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-      color: #222;
-    }
-
-    h1, h2 {
-      text-align: center;
-      color: #111;
-    }
-
-    section {
-      padding: 60px 20px;
-    }
-
-    /* === Navbar === */
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: linear-gradient(90deg, #0d47a1, #1565c0);
-      padding: 12px 0;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      z-index: 1000;
-    }
-
-    nav .menu {
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #bbdefb;
-    }
-
-    .hamburger {
-      display: none;
-      position: absolute;
-      left: 20px;
-      top: 12px;
-      font-size: 26px;
-      color: white;
-      cursor: pointer;
-    }
-
-    @media (max-width: 768px) {
-      nav .menu {
-        display: none;
-        flex-direction: column;
-        background-color: #0d47a1;
-        position: absolute;
-        top: 55px;
-        left: 0;
-        width: 100%;
-        text-align: center;
-      }
-
-      nav .menu.active {
-        display: flex;
-      }
-
-      .hamburger {
-        display: block;
-      }
-    }
-
-    /* === Buttons === */
-    .btn {
-      display: inline-block;
-      background: linear-gradient(90deg, #0d47a1, #1565c0);
-      color: #fff;
-      padding: 12px 24px;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: 600;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: linear-gradient(90deg, #1565c0, #1e88e5);
-    }
-
-    /* === Hero Section === */
-    #home {
-      background: url('your-photo.jpg') center/cover no-repeat;
-      color: white;
-      text-shadow: 1px 1px 3px #000;
-      padding-top: 100px;
-      padding-bottom: 100px;
-    }
-
-    #home::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.4);
-      z-index: 1;
-    }
-
-    #home h1, #home p, #home .btn {
-      position: relative;
-      z-index: 2;
-    }
-
-    /* === Services Section === */
-    .services-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .service {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      text-align: center;
-      transition: transform 0.3s;
-    }
-
-    .service:hover {
-      transform: translateY(-5px);
-    }
-
-    /* === Contact Section === */
-    #contact {
-      background-color: #f9f9f9;
-    }
-
-    form {
-      max-width: 400px;
-      margin: 20px auto;
-      background: #fff;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    button {
-      width: 100%;
-      padding: 12px;
-      background: linear-gradient(90deg, #0d47a1, #1565c0);
-      border: none;
-      color: white;
-      font-weight: 600;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: linear-gradient(90deg, #1565c0, #1e88e5);
-    }
-
-    /* === Footer === */
-    footer {
-      text-align: center;
-      background: #0d47a1;
-      color: white;
-      padding: 10px 0;
-      font-size: 0.9em;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -223,6 +35,126 @@
     </div>
   </nav>
 
+  <style>
+    /* === Basic Styling === */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+      background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #111;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    /* === Navbar === */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #111;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    nav .menu {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hamburger {
+      display: none;
+      position: absolute;
+      left: 20px;
+      top: 12px;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      nav .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #111;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      nav .menu.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: block;
+      }
+    }
+
+    /* === Buttons === */
+    .btn {
+      display: inline-block;
+      background-color: #111;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background-color: #444;
+    }
+
+    /* === Footer === */
+    footer {
+      text-align: center;
+      background: #111;
+      color: white;
+      padding: 10px 0;
+    }
+
+    /* === Services === */
+    .services-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .service {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+
   <script>
     function toggleMenu() {
       document.getElementById("menu").classList.toggle("active");
@@ -230,7 +162,7 @@
   </script>
 
   <!-- === Hero Section === -->
-  <section id="home">
+  <section id="home" style="padding-top: 80px; background: url('your-photo.jpg') center/cover no-repeat; color: white; text-shadow: 1px 1px 3px black;">
     <h1>Welcome to Jose Electrofix Nyahururu</h1>
     <p style="text-align:center;">Your trusted experts in mobile phone repairs, CCTV installations, and electric fence systems.</p>
     <div style="text-align:center;">
@@ -238,7 +170,7 @@
     </div>
   </section>
 
-  <!-- === Services === -->
+  <!-- === Services Section === -->
   <section id="services">
     <h2>Our Services</h2>
     <div class="services-container">
@@ -252,7 +184,7 @@
       </div>
       <div class="service">
         <h3>⚡ Electric Fences & Alarms</h3>
-        <p>Installation and maintenance of electric fences and alarm systems.</p>
+        <p>Full installation and maintenance of electric fences and alarm systems.</p>
       </div>
       <div class="service">
         <h3>💡 Electrical Solutions</h3>
@@ -261,35 +193,35 @@
     </div>
   </section>
 
-  <!-- === About === -->
+  <!-- === About Section === -->
   <section id="about">
     <h2>About Jose Electrofix</h2>
     <p style="max-width:800px;margin:auto;text-align:center;">
-      <strong>Jose Electrofix</strong> is a professional electronics and security systems business based in
-      <strong>Nyahururu, Kenya</strong>. We specialize in <strong>mobile phone repairs, spare parts, CCTV, alarm,
-      and electric fence installations</strong>. Our mission is to provide affordable, reliable, and professional
-      service to homes, offices, and institutions.
+      <strong>Jose Electrofix</strong> is a professional electronics and security systems business based in <strong>Nyahururu, Kenya</strong>.
+      We specialize in <strong>mobile phone repairs, spare parts, CCTV, alarm, and electric fence installations</strong>.
+      Our mission is to provide affordable, reliable, and professional service to homes, offices, and institutions.
     </p>
   </section>
 
-  <!-- === Contact === -->
-  <section id="contact">
+  <!-- === Contact Section === -->
+  <section id="contact" style="background-color: #f9f9f9;">
     <h2>Contact Us</h2>
     <p style="text-align:center;"><strong>Location:</strong> Nyahururu Town, Kenya</p>
-    <p style="text-align:center;"><strong>Phone:</strong> +254 717 173 963</p>
+    <p style="text-align:center;"><strong>Phone:</strong> +254 717173963</p>
     <p style="text-align:center;"><strong>Email:</strong> josephmbugua1150@gmail.com</p>
 
-    <form action="https://formspree.io/f/movkkdzp" method="POST">
-      <label for="name">Your Name:</label><br />
-      <input type="text" id="name" name="name" required placeholder="Enter your name" /><br /><br />
+    <!-- ✅ Updated Formspree Contact Form -->
+    <form action="https://formspree.io/f/movkkdzp" method="POST" style="max-width:400px;margin:auto;">
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
 
-      <label for="email">Your Email:</label><br />
-      <input type="email" id="email" name="_replyto" required placeholder="Enter your email" /><br /><br />
+      <label for="email">Your Email:</label><br>
+      <input type="email" id="email" name="_replyto" required><br><br>
 
-      <label for="message">Message:</label><br />
-      <textarea id="message" name="message" rows="5" required placeholder="Write your message here"></textarea><br /><br />
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
 
-      <button type="submit">Send Message</button>
+      <button type="submit" class="btn">Send Message</button>
     </form>
   </section>
 

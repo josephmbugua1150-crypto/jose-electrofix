@@ -1,77 +1,212 @@
+/* === GLOBAL STYLES === */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  background: #f4f6f8;
-  color: #333;
+  background: #fdfdfd;
+  color: #222;
+  scroll-behavior: smooth;
 }
 
-header {
-  background: #0a3d62;
-  color: white;
+/* === HEADINGS === */
+h1, h2, h3 {
   text-align: center;
-  padding: 1.5em 0;
+  color: #111;
+  margin-bottom: 20px;
 }
 
-header h1 {
-  margin-bottom: 0.2em;
+/* === NAVBAR === */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #ffcc00, #ff9900);
+  color: #111;
+  padding: 12px 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
 }
 
 nav a {
-  color: #fff;
+  color: #111;
   text-decoration: none;
-  margin: 0 10px;
   font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: white;
 }
 
-#hero {
-  background: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1200&q=60') no-repeat center center/cover;
-  color: white;
+/* === HAMBURGER === */
+.hamburger {
+  display: none;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  font-size: 28px;
+  color: #111;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav .menu {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  nav .menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  nav a {
+    color: #ffcc00;
+  }
+
+  nav a:hover {
+    color: white;
+  }
+}
+
+/* === HERO SECTION === */
+#home {
+  background: url('your-photo.jpg') no-repeat center center/cover;
+  padding: 120px 20px;
   text-align: center;
-  padding: 5em 1em;
+  color: white;
+  background-attachment: fixed;
 }
 
-#hero .btn {
-  background: #1e90ff;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 25px;
+#home h1 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+#home p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* === BUTTONS === */
+.btn {
   display: inline-block;
-  margin-top: 10px;
+  background: linear-gradient(90deg, #111, #333);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: bold;
 }
 
-#hero .btn:hover {
-  background: #007acc;
+.btn:hover {
+  background: linear-gradient(90deg, #ffcc00, #ff9900);
+  color: #111;
 }
 
-section {
-  padding: 3em 1em;
-  text-align: center;
+/* === SERVICES === */
+#services {
+  background: #fffbea;
+  padding: 60px 20px;
 }
 
 .services-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5em;
-  margin-top: 2em;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .service {
   background: white;
-  padding: 1.5em;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s;
 }
 
-footer {
-  background: #0a3d62;
-  color: white;
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* === ABOUT === */
+#about {
+  background: linear-gradient(135deg, #fff9e6, #fff);
+  padding: 60px 20px;
   text-align: center;
-  padding: 1em 0;
+  max-width: 900px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+/* === CONTACT === */
+#contact {
+  background: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background: linear-gradient(90deg, #ffcc00, #ff9900);
+  color: #111;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(90deg, #111, #333);
+  color: white;
+}
+
+/* === FOOTER === */
+footer {
+  background: linear-gradient(90deg, #ffcc00, #ff9900);
+  color: #111;
+  text-align: center;
+  padding: 15px 0;
+  font-weight: bold;
+  letter-spacing: 1px;
 }

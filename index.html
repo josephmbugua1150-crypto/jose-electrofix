@@ -1,86 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jose Electrofix Nyahururu | Mobile Repairs & Security Systems</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jose Electrofix Nyahururu | Mobile Repairs & Security Systems</title>
 
-  <!-- SEO & Social Meta Tags -->
-  <meta name="title" content="Jose Electrofix Nyahururu | Mobile Repairs & Security Systems" />
-  <meta name="description" content="Jose Electrofix offers expert mobile phone repairs, CCTV installation, and electric fence setup in Nyahururu, Kenya." />
-  <meta name="keywords" content="Jose Electrofix, Nyahururu, mobile repair, phone repair, CCTV installation, electric fence, electronics repair, security systems Kenya" />
-  <meta name="author" content="Jose Mbugua" />
-  <meta name="robots" content="index, follow" />
+<!-- SEO -->
+<meta name="title" content="Jose Electrofix Nyahururu | Mobile Repairs & Security Systems" />
+<meta name="description" content="Jose Electrofix offers expert mobile phone repairs, CCTV installation, and electric fence setup in Nyahururu, Kenya." />
+<meta name="keywords" content="Jose Electrofix, Nyahururu, mobile repair, phone repair, CCTV installation, electric fence, electronics repair, security systems Kenya" />
+<meta name="author" content="Jose Mbugua" />
+<meta name="robots" content="index, follow" />
 
-  <meta property="og:title" content="Jose Electrofix Nyahururu | Mobile Repairs & Security Systems" />
-  <meta property="og:description" content="Trusted experts in phone repair, CCTV installation, and electric fence systems in Nyahururu." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://josephmbugua1150.github.io/jose-electrofix/" />
-  <meta property="og:image" content="https://josephmbugua1150.github.io/jose-electrofix/jose.jpg" />
+<!-- Open Graph -->
+<meta property="og:title" content="Jose Electrofix Nyahururu | Mobile Repairs & Security Systems" />
+<meta property="og:description" content="Trusted experts in phone repair, CCTV installation, and electric fence systems in Nyahururu." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://josephmbugua1150.github.io/jose-electrofix/" />
+<meta property="og:image" content="https://josephmbugua1150.github.io/jose-electrofix/jose.jpg" />
 
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+<style>
+  body {font-family: 'Poppins', sans-serif; margin:0; padding:0;}
+  nav {background:#333; color:#fff; padding:10px;}
+  nav a {color:#fff; margin:10px; text-decoration:none;}
+  .social-links a {display:inline-block; margin:10px; padding:10px 20px; border-radius:30px; color:#fff; font-weight:bold; text-decoration:none; transition:0.3s;}
+  .whatsapp {background:#25d366;} .facebook {background:#1877f2;} .social-links a:hover {opacity:0.8; transform:scale(1.05);}
+  section {padding:40px 20px;}
+  .services-container {display:flex; flex-wrap:wrap; gap:20px;}
+  .service {flex:1 1 200px; background:#f2f2f2; padding:20px; border-radius:10px;}
+  footer {text-align:center; padding:20px; background:#333; color:#fff;}
+</style>
 </head>
 <body>
-  <nav>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <div class="menu" id="menu">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+  <h1>Welcome to Jose Electrofix Nyahururu</h1>
+  <p>Your trusted experts in mobile phone repairs, CCTV installations, and electric fence systems.</p>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services-container">
+    <div class="service"><h3>📱 Mobile Phone Repairs</h3><p>Professional repairs for all phone models.</p></div>
+    <div class="service"><h3>🎥 CCTV Installation</h3><p>Reliable CCTV systems for your property.</p></div>
+    <div class="service"><h3>⚡ Electric Fences & Alarms</h3><p>Installation and maintenance of fences and alarms.</p></div>
+    <div class="service"><h3>💡 Electrical Solutions</h3><p>Energy-efficient wiring and lighting services.</p></div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Jose Electrofix</h2>
+  <p>Professional electronics and security systems business in Nyahururu, Kenya. We specialize in mobile repairs, CCTV, alarms, and electric fences.</p>
+</section>
+
+<section id="gallery">
+  <h2>Our Work</h2>
+  <img src="photo1.jpg" alt="Mobile Repair" style="width:30%; margin:10px;">
+  <img src="photo2.jpg" alt="CCTV Installation" style="width:30%; margin:10px;">
+  <img src="photo3.jpg" alt="Electric Fence" style="width:30%; margin:10px;">
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Location: Nyahururu Town, Kenya</p>
+  <p>Phone: +254 717 173 963</p>
+  <p>Email: josephmbugua1150@gmail.com</p>
+
+  <div class="social-links">
+    <a href="https://wa.me/254717173963" target="_blank" class="whatsapp">💬 WhatsApp</a>
+    <a href="https://www.facebook.com/josephmbugua11" target="_blank" class="facebook">📘 Facebook</a>
+  </div>
+
+  <!-- Formspree Form -->
+  <form action="https://formspree.io/f/movkkdzp" method="POST">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="_replyto" required><br><br>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+    <button type="submit">Send Message</button>
+  </form>
 
   <script>
-    function toggleMenu() {
-      document.getElementById("menu").classList.toggle("active");
-    }
+    const form = document.querySelector("form");
+    form.addEventListener("submit", async (e)=>{
+      e.preventDefault();
+      const data = new FormData(form);
+      const response = await fetch(form.action, {method: form.method, body: data, headers:{'Accept':'application/json'}});
+      if(response.ok){form.reset(); alert("✅ Message sent!");}else{alert("⚠️ Issue sending message.");}
+    });
   </script>
+</section>
 
-  <section id="home">
-    <h1>Welcome to Jose Electrofix Nyahururu</h1>
-    <p>Your trusted experts in mobile phone repairs, CCTV installations, and electric fence systems.</p>
-    <a href="#contact" class="btn">Contact Us</a>
-  </section>
+<footer>
+  <p>© 2025 Jose Electrofix — All Rights Reserved.</p>
+</footer>
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="services-container">
-      <div class="service"><h3>📱 Mobile Phone Repairs</h3><p>Professional repairs for all phone models.</p></div>
-      <div class="service"><h3>🎥 CCTV Installation</h3><p>Reliable CCTV systems for your property.</p></div>
-      <div class="service"><h3>⚡ Electric Fences & Alarms</h3><p>Installation and maintenance of fences and alarms.</p></div>
-      <div class="service"><h3>💡 Electrical Solutions</h3><p>Energy-efficient wiring and lighting services.</p></div>
-    </div>
-  </section>
-
-  <section id="about">
-    <h2>About Jose Electrofix</h2>
-    <p>Professional electronics and security systems business in Nyahururu, Kenya. We specialize in mobile repairs, CCTV, alarms, and electric fences.</p>
-  </section>
-
-  <section id="gallery">
-    <h2>Our Work</h2>
-    <div class="images">
-      <img src="photo1.jpg" alt="Mobile Repair" />
-      <img src="photo2.jpg" alt="CCTV Installation" />
-      <img src="photo3.jpg" alt="Electric Fence" />
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Location: Nyahururu Town, Kenya</p>
-    <p>Phone: +254 717 173 963</p>
-    <p>Email: josephmbugua1150@gmail.com</p>
-    <div class="social-links">
-      <a href="https://wa.me/254717173963" target="_blank" class="whatsapp">💬 WhatsApp</a>
-      <a href="https://www.facebook.com/josephmbugua11" target="_blank" class="facebook">📘 Facebook</a>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Jose Electrofix — All Rights Reserved.</p>
-  </footer>
 </body>
 </html>

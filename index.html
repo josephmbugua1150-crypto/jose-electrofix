@@ -19,38 +19,9 @@
   <meta property="og:image" content="https://josephmbugua1150.github.io/jose-electrofix/jose.jpg" />
 
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-
-  <style>
-    .social-links {
-      margin-top: 20px;
-    }
-    .social-links a {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 20px;
-      border-radius: 30px;
-      color: #fff;
-      font-weight: bold;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    .social-links a.whatsapp {
-      background: #25d366;
-    }
-    .social-links a.facebook {
-      background: #1877f2;
-    }
-    .social-links a:hover {
-      opacity: 0.8;
-      transform: scale(1.05);
-    }
-  </style>
 </head>
 <body>
-  <!-- Navigation -->
   <nav>
     <div class="hamburger" onclick="toggleMenu()">☰</div>
     <div class="menu" id="menu">
@@ -60,53 +31,34 @@
       <a href="#contact">Contact</a>
     </div>
   </nav>
+
   <script>
     function toggleMenu() {
       document.getElementById("menu").classList.toggle("active");
     }
   </script>
 
-  <!-- Hero Section -->
   <section id="home">
     <h1>Welcome to Jose Electrofix Nyahururu</h1>
     <p>Your trusted experts in mobile phone repairs, CCTV installations, and electric fence systems.</p>
     <a href="#contact" class="btn">Contact Us</a>
   </section>
 
-  <!-- Services -->
   <section id="services">
     <h2>Our Services</h2>
     <div class="services-container">
-      <div class="service">
-        <h3>📱 Mobile Phone Repairs</h3>
-        <p>Professional repairs for all phone models using quality replacement parts.</p>
-      </div>
-      <div class="service">
-        <h3>🎥 CCTV Installation</h3>
-        <p>We design and install reliable CCTV systems to keep your property secure.</p>
-      </div>
-      <div class="service">
-        <h3>⚡ Electric Fences & Alarms</h3>
-        <p>Full installation and maintenance of electric fences, alarm systems, and motion sensors.</p>
-      </div>
-      <div class="service">
-        <h3>💡 Electrical Solutions</h3>
-        <p>We offer energy-efficient wiring, lighting, and maintenance services for homes and offices.</p>
-      </div>
+      <div class="service"><h3>📱 Mobile Phone Repairs</h3><p>Professional repairs for all phone models.</p></div>
+      <div class="service"><h3>🎥 CCTV Installation</h3><p>Reliable CCTV systems for your property.</p></div>
+      <div class="service"><h3>⚡ Electric Fences & Alarms</h3><p>Installation and maintenance of fences and alarms.</p></div>
+      <div class="service"><h3>💡 Electrical Solutions</h3><p>Energy-efficient wiring and lighting services.</p></div>
     </div>
   </section>
 
-  <!-- About -->
   <section id="about">
     <h2>About Jose Electrofix</h2>
-    <p>
-      <strong>Jose Electrofix</strong> is a professional electronics and security systems business based in <strong>Nyahururu, Kenya</strong>.
-      We specialize in <strong>mobile phone repairs, spare parts, CCTV, alarm, and electric fence installations</strong>.
-      Our mission is to provide affordable, reliable, and professional services to homes, offices, and institutions.
-    </p>
+    <p>Professional electronics and security systems business in Nyahururu, Kenya. We specialize in mobile repairs, CCTV, alarms, and electric fences.</p>
   </section>
 
-  <!-- Gallery -->
   <section id="gallery">
     <h2>Our Work</h2>
     <div class="images">
@@ -116,38 +68,19 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Us</h2>
-    <p><strong>Location:</strong> Nyahururu Town, Kenya</p>
-    <p><strong>Phone:</strong> +254 717 173 963</p>
-    <p><strong>Email:</strong> josephmbugua1150@gmail.com</p>
-
+    <p>Location: Nyahururu Town, Kenya</p>
+    <p>Phone: +254 717 173 963</p>
+    <p>Email: josephmbugua1150@gmail.com</p>
     <div class="social-links">
-      <a href="https://wa.me/254717173963?text=Hello%20Kibe%20Joseph%2C%20I%27m%20interested%20in%20your%20services." target="_blank" class="whatsapp">💬 WhatsApp Kibe Joseph</a>
+      <a href="https://wa.me/254717173963" target="_blank" class="whatsapp">💬 WhatsApp</a>
       <a href="https://www.facebook.com/josephmbugua11" target="_blank" class="facebook">📘 Facebook</a>
     </div>
-
-    <form action="https://formspree.io/f/movkkdzp" method="POST">
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="email">Your Email:</label>
-      <input type="email" id="email" name="_replyto" required />
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <button type="submit" class="btn">Send Message</button>
-    </form>
   </section>
 
   <footer>
     <p>© 2025 Jose Electrofix — All Rights Reserved.</p>
-    <div class="social-links">
-      <a href="https://wa.me/254717173963?text=Hello%20Kibe%20Joseph%2C%20I%27m%20interested%20in%20your%20services." target="_blank" class="whatsapp">💬 WhatsApp</a>
-      <a href="https://www.facebook.com/josephmbugua11" target="_blank" class="facebook">📘 Facebook</a>
-    </div>
   </footer>
 </body>
 </html>
